@@ -5,7 +5,7 @@
 1. Pull this Github repo
 On a Jetstream instance,
 ```
-git pull https://github.com/breakfast-carpentry/diamondsingularity.git
+git clone https://github.com/breakfast-carpentry/diamondsingularity.git
 ```
 Go into the repo,
 ```
