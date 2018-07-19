@@ -1,3 +1,35 @@
+# Singularity Example
+
+## Instructions to create the Singularity image and run the container!
+
+1. Pull this Github repo
+On a Jetstream instance,
+```
+git pull https://github.com/breakfast-carpentry/diamondsingularity.git
+```
+Go into the repo,
+```
+cd diamondsingularity
+```
+
+2. Build the Singularity image
+```
+sudo singularity build diamond.simg Singularity
+```
+
+3. Run the python script with the container.
+```
+singularity exec diamond.simg python3 script.py
+```
+
+You can also go into the container and play with it interactively
+```
+sudo singularity shell diamond.simg
+```
+
+
+
+## Overview of what we did this morning
 This morning our goal was to build and run a Singularity image with our own script and data and get output from our code.
 
 - We first used Jetstream (because we have root access there).
