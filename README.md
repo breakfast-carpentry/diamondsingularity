@@ -19,7 +19,7 @@ sudo singularity build diamond.simg Singularity
 
 3. Run the python script with the container.
 ```
-singularity exec diamond.simg python3 script.py
+singularity run diamond.simg
 ```
 
 You can also go into the container and play with it interactively
@@ -27,7 +27,10 @@ You can also go into the container and play with it interactively
 sudo singularity shell diamond.simg
 ```
 
-
+You can exit out of the shell by typing `exit` inside the container
+```
+Singularity diamond.simg:~> exit
+```
 
 ## Overview of what we did this morning
 This morning our goal was to build and run a Singularity image with our own script and data and get output from our code.
